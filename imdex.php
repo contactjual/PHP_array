@@ -38,4 +38,35 @@ unset($fruits[1]); // deleted the 1 number index's value
 echo print_r($fruits) ."<br>";
 
 
+
+
+
+// Find array length...................... count() function................ 
+
+$check_length = count($fruits);
+echo $check_length;
+
+
+
+
+
+// Associative Array.....................................................
+
+$key_value_array = [  // added key and value
+    'name' => 'Jual', 
+    'age' => 19, 
+    'isLoggedIn' => true
+];
+
+print_r($key_value_array);
+
+// loop ...
+
+foreach ($key_value_array as $x => $y) {
+    echo "<br>". $x .": ". $y ."<br>";
+};
+
+
+
+
 ?>
