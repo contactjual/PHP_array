@@ -69,4 +69,76 @@ foreach ($key_value_array as $x => $y) {
 
 
 
+
+
+// array sorting... 
+
+$array_sort = ["Apple", "Banana", "Orenge", "Mango"];
+sort($array_sort); // array is sorted from first alpabet
+foreach ($array_sort as $x) {
+    echo "$x <br>";
+}
+
+rsort($array_sort); // array is sorted from last alpabet
+foreach ($array_sort as $x) {
+    echo "$x <br>";
+}
+
+rsort($array_sort); // array is sorted from last alpabet
+foreach ($array_sort as $x) {
+    echo "$x <br>";
+}
+
+
+$number = [12, 23, 4, 6, 77, 8, 10];
+sort($number); // array is sorted form lower number
+foreach($number as $x) {
+    echo "$x <br>";
+}
+
+$number = [12, 23, 4, 6, 77, 8, 10];
+rsort($number); // array is sorted form heigher number
+foreach($number as $x) {
+    echo "$x <br>";
+}
+
+
+$person_age = [
+    "Jual" => 19,
+    "Rana" => 15,
+    "Kolil" => 40,
+    "Jolil" => 64
+];
+asort($person_age); // ages are sorted
+foreach ($person_age as $name => $age) {
+    echo "$name is $age years <br>";
+}
+
+ksort($person_age); // keys are sorted
+foreach ($person_age as $name => $age) {
+    echo "$name is $age years <br>";
+}
+
+
+
+
+
+// PHP Multidimensional Arrays...
+
+$my_multy_array = [
+    $inner_arr1 = ["sdkfo", "jdoe", "jdfo"],
+    $inner_arr2 = ["ad", "obe", "pho"],
+    $inner_arr3 = [22, 45, 67]
+];
+// echo $my_multy_array[0][1]; // jdoe
+
+// looping..
+for ($a = 0; $a < count($my_multy_array); $a++) {
+    for ($s = 0; $s < count($my_multy_array[$a]); $s++) {
+        echo $my_multy_array[$a][$s] ."<br>";
+    }
+}
+
+
+
 ?>
